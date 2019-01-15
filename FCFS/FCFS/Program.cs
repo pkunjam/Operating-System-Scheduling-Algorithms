@@ -16,11 +16,13 @@ namespace FCFS
             Console.WriteLine("Enter the total no. of process :");
             n = int.Parse(Console.ReadLine());
 
+            Console.WriteLine();
+
             int[] wTime = new int[n];
             int[] bTime = new int[n];
             int[] TATime = new int[n];
             int[] aTime = new int[n];
-            int[] cTime = new int[n];
+            int[] pId = new int[n];
 
             float avgWT = 0;
             float avgTAT = 0;
@@ -28,22 +30,24 @@ namespace FCFS
             Console.WriteLine("Enter the arrival time for corresponding processes :");
             Console.WriteLine();
 
-            for (i = 0; i<n; i++)
+            for (i = 0; i < n; i++)
             {
-                Console.WriteLine("P" + (i+1));
+                Console.Write("P" + (i + 1) + ": ");
                 aTime[i] = int.Parse(Console.ReadLine());
-                Console.WriteLine();
             }
+
+            Console.WriteLine();
 
             Console.WriteLine("Enter the burst time for corresponding processes :");
-
-            for (i=0; i<n; i++)
+            Console.WriteLine();
+            for (i = 0; i < n; i++)
             {
-                Console.WriteLine("P" + (i+1));
+                Console.Write("P" + (i + 1) + ": ");
                 bTime[i] = int.Parse(Console.ReadLine());
-                Console.WriteLine();
+                pId[i] = i + 1;
             }
 
+            Console.WriteLine();
 
             wTime[0] = 0;    //waiting time for first process is 0
 
@@ -66,12 +70,12 @@ namespace FCFS
             avgWT = avgWT / n;
             avgTAT = avgTAT / n;
 
+            Console.WriteLine("Process" + "  " + "Arrival time" + "  " + "Burst time" + "  " + "Turn around time" + "  " + "Waiting time");
             Console.WriteLine();
 
-            Console.WriteLine("Process" + "  " + "Arrival time" + "  " + "Burst time" + "  " + "Turn around time" + "  " + "Waiting time");
             for (i = 0; i < n; i++)
             {
-                Console.WriteLine("P" + (i + 1) + "\t     " + aTime[i] + "\t\t   " + bTime[i] + "\t\t" + TATime[i] + "\t\t" + wTime[i]);
+                Console.WriteLine("P" + pId[i] + "\t     " + aTime[i] + "\t\t   " + bTime[i] + "\t\t" + TATime[i] + "\t\t" + wTime[i]);
             }
 
             Console.WriteLine();
