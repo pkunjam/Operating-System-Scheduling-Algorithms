@@ -5,3 +5,10 @@ C:\Users\kunja\source\repos\FCFS\FCFS\obj\Debug\FCFS.csproj.CoreCompileInputs.ca
 C:\Users\kunja\source\repos\FCFS\FCFS\obj\Debug\FCFS.exe
 C:\Users\kunja\source\repos\FCFS\FCFS\obj\Debug\FCFS.pdb
 C:\Users\kunja\source\repos\FCFS\FCFS\obj\Debug\FCFS.csprojAssemblyReference.cache
+C:\Users\kunja\Documents\GitHub\Operating-System-Scheduling-Algorithms\FCFS\FCFS\bin\Debug\FCFS.exe.config
+C:\Users\kunja\Documents\GitHub\Operating-System-Scheduling-Algorithms\FCFS\FCFS\bin\Debug\FCFS.exe
+C:\Users\kunja\Documents\GitHub\Operating-System-Scheduling-Algorithms\FCFS\FCFS\bin\Debug\FCFS.pdb
+C:\Users\kunja\Documents\GitHub\Operating-System-Scheduling-Algorithms\FCFS\FCFS\obj\Debug\FCFS.csprojAssemblyReference.cache
+C:\Users\kunja\Documents\GitHub\Operating-System-Scheduling-Algorithms\FCFS\FCFS\obj\Debug\FCFS.csproj.CoreCompileInputs.cache
+C:\Users\kunja\Documents\GitHub\Operating-System-Scheduling-Algorithms\FCFS\FCFS\obj\Debug\FCFS.exe
+C:\Users\kunja\Documents\GitHub\Operating-System-Scheduling-Algorithms\FCFS\FCFS\obj\Debug\FCFS.pdb

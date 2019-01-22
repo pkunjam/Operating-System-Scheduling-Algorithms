@@ -5,26 +5,26 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FCFS
+namespace HRRN
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int i,j,k,count,n,min;
+            int i, j, k, count,max,n,RR;
 
             Console.WriteLine("Enter the total no. of process :");
             n = int.Parse(Console.ReadLine());
 
             Console.WriteLine();
 
-            int[] testAT = new int[n];
             int[] cTime = new int[n];
             int[] wTime = new int[n];
             int[] bTime = new int[n];
             int[] TATime = new int[n];
             int[] aTime = new int[n];
             int[] pId = new int[n];
+            int[] check = new int[n];
 
             float avgWT = 0;
             float avgTAT = 0;
@@ -53,31 +53,43 @@ namespace FCFS
 
             for (i = 0; i < n; i++)
             {
-                testAT[i] = aTime[i];
+                check[i] = 0;
             }
 
             // completion time
             count = 0;
             j = 0;
-            while (j<n)
+            while (j < n)
             {
-                min = 1000;
-                k=0;
+                max = 0;
+                k = -1;
                 for (i = 0; i < n; i++)
                 {
-                    if (testAT[i] < min)
+                    RR = (count - aTime[i] + bTime[i]) / bTime[i];
+                    if (RR == max)
                     {
-                        min = testAT[i];
-                        k = i;
+                        if (aTime[i] < aTime[k])
+                        {
+                            k = i;
+                        }
+                    }
+
+                    if (RR > max)
+                    {
+                        if (aTime[i] <= count && check[i]==0)
+                        {
+                            max = RR;
+                            k = i;
+                        }
                     }
                 }
 
-                if (testAT[k] <= count)
+                if (k != -1)
                 {
                     cTime[k] = bTime[k] + count;
                     count += bTime[k];
                     j++;
-                    testAT[k] = 1000;
+                    check[k] = 1;
                 }
                 else
                 {
@@ -104,12 +116,12 @@ namespace FCFS
             avgWT = avgWT / n;
             avgTAT = avgTAT / n;
 
-            Console.WriteLine("Process" + "  "+ "Completion time"+ "  " + "Arrival time" + "  " + "Burst time" + "  " + "Turn around time" + "  " + "Waiting time");
+            Console.WriteLine("Process" + "  " + "Completion time" + "  " + "Arrival time" + "  " + "Burst time" + "  " + "Turn around time" + "  " + "Waiting time");
             Console.WriteLine();
 
             for (i = 0; i < n; i++)
             {
-                Console.WriteLine("P" + pId[i] +"\t    " + cTime[i] + "\t\t     " + aTime[i] + "\t\t   " + bTime[i] + "\t\t" + TATime[i] + "\t\t" + wTime[i]);
+                Console.WriteLine("P" + pId[i] + "\t    " + cTime[i] + "\t\t     " + aTime[i] + "\t\t   " + bTime[i] + "\t\t" + TATime[i] + "\t\t" + wTime[i]);
             }
 
             Console.WriteLine();

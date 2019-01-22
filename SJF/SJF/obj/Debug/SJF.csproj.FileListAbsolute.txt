@@ -5,3 +5,10 @@ C:\Users\kunja\source\repos\SJF\SJF\obj\Debug\SJF.csprojAssemblyReference.cache
 C:\Users\kunja\source\repos\SJF\SJF\obj\Debug\SJF.csproj.CoreCompileInputs.cache
 C:\Users\kunja\source\repos\SJF\SJF\obj\Debug\SJF.exe
 C:\Users\kunja\source\repos\SJF\SJF\obj\Debug\SJF.pdb
+C:\Users\kunja\Documents\GitHub\Operating-System-Scheduling-Algorithms\SJF\SJF\bin\Debug\SJF.exe.config
+C:\Users\kunja\Documents\GitHub\Operating-System-Scheduling-Algorithms\SJF\SJF\bin\Debug\SJF.exe
+C:\Users\kunja\Documents\GitHub\Operating-System-Scheduling-Algorithms\SJF\SJF\bin\Debug\SJF.pdb
+C:\Users\kunja\Documents\GitHub\Operating-System-Scheduling-Algorithms\SJF\SJF\obj\Debug\SJF.csprojAssemblyReference.cache
+C:\Users\kunja\Documents\GitHub\Operating-System-Scheduling-Algorithms\SJF\SJF\obj\Debug\SJF.csproj.CoreCompileInputs.cache
+C:\Users\kunja\Documents\GitHub\Operating-System-Scheduling-Algorithms\SJF\SJF\obj\Debug\SJF.exe
+C:\Users\kunja\Documents\GitHub\Operating-System-Scheduling-Algorithms\SJF\SJF\obj\Debug\SJF.pdb
