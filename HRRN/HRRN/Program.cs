@@ -13,6 +13,8 @@ namespace HRRN
         {
             int i, j, k, count,max,n,RR;
 
+            Console.WriteLine("HRRN");
+            Console.WriteLine();
             Console.WriteLine("Enter the total no. of process :");
             n = int.Parse(Console.ReadLine());
 

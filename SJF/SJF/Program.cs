@@ -13,6 +13,8 @@ namespace SJF
         {
             int i, j, k, count, n, min;
 
+            Console.WriteLine("SJF");
+            Console.WriteLine();
             Console.WriteLine("Enter the total no. of process :");
             n = int.Parse(Console.ReadLine());
 
