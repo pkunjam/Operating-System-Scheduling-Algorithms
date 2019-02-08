@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Priority(preemptive)", "Priority(preemptive)\Priority(preemptive).csproj", "{17C6702E-96C2-40F6-9A7F-EE9BDD0FD52D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17C6702E-96C2-40F6-9A7F-EE9BDD0FD52D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17C6702E-96C2-40F6-9A7F-EE9BDD0FD52D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17C6702E-96C2-40F6-9A7F-EE9BDD0FD52D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17C6702E-96C2-40F6-9A7F-EE9BDD0FD52D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC934092-70F6-4C99-BDB6-BF5E22655002}
+	EndGlobalSection
+EndGlobal
